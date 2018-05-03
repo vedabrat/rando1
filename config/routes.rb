@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :charges
   devise_for :users
   root 'rand#home'
   get 'rand/_active'
