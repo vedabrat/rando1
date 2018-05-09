@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :charges
   devise_for :users
   root 'rand#home'
+  get 'charges/new'
+  get 'charges/create'
   get 'rand/_active'
   get 'rand/_logout'
   get 'rand/_scan'
